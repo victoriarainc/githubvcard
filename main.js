@@ -25,14 +25,18 @@ function reqListener () {
         <li>Github URL: <a href="${data.html_url}">${data.login}</a></li>
         <li>Email: ${data.email}</li>
         <li>Company: ${data.company}</li>
-        <li>Website: ${data.blog}</li>
+        <li>Website: <a href="${data.blog}">LinkedIn Profile</a></li>
       </ul>
     </section>
     <section id="story">
-    <h2>The Story</h2>
-    <p>${data.bio}</p>
+      <section id="storytxt">
+        <h2>The Story</h2>
+        <p>${data.bio}</p>
+      </section>
     <img src="${data.avatar_url}">
+
     </section
+
   </section>
   `
 
